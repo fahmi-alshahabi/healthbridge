@@ -1,0 +1,675 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
+
+body,
+html {
+  background-color: #f0eeee;
+  font-family: "Montserrat", sans-serif !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+p {
+  color: #202020;
+  font-weight: 500;
+}
+
+/* colors and backgrounds */
+
+.bg-white {
+  background-color: #fff;
+  border-radius: 4px !important;
+  border: 1px solid #d3d2d2;
+  box-shadow: 0 0 2px 0 #d3d2d2;
+}
+
+.press-to-go-back {
+  text-align: right;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.no-underline {
+  text-decoration: none !important;
+}
+.press-to-go-back-logout-button {
+  text-align: right;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.press-to-go-back-logout-button:hover {
+  text-align: right;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #5dade2;
+}
+.press-to-go-back:hover {
+  color: #1d9dff;
+}
+
+.text-primary {
+  color: #205e61;
+}
+.text-secondary {
+  color: #d61355;
+}
+.bg-primary {
+  background-color: #205e61;
+}
+.bg-secondary {
+  background-color: #d61355;
+}
+
+/* flex classes */
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+.items-end {
+  align-items: flex-end;
+}
+
+.gap-1 {
+  gap: 10px;
+}
+.gap-2 {
+  gap: 20px;
+}
+.gap-3 {
+  gap: 30px;
+}
+.divgap {
+  margin-top: 101px;
+  width: 100%;
+}
+/* heights and widths */
+.h-screen {
+  height: 100vh;
+}
+.h-600 {
+  height: 490px;
+}
+.h-800 {
+  height: 460px;
+}
+.w-800 {
+  width: 500px;
+}
+.w-400 {
+  width: 400px;
+}
+.w-600 {
+  width: 500px;
+}
+.w-full {
+  width: 100%;
+}
+.w-half {
+  width: 50%;
+}
+.p-1 {
+  padding: 10px;
+}
+.p-2 {
+  padding: 20px;
+}
+.p-3 {
+  padding: 30px;
+}
+
+.m-1 {
+  margin: 10px;
+}
+.m-2 {
+  margin: 20px;
+}
+.m-3 {
+  margin: 30px;
+}
+.mb-1 {
+  margin-bottom: 10px;
+}
+.mb-2 {
+  margin-bottom: 10px;
+}
+.mt-1 {
+  margin-top: 10px;
+}
+.mt-2 {
+  margin-top: 20px;
+}
+
+.py-1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.py-2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.py-3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.my-1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.my-2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.my-3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* form-elements */
+input,
+textarea,
+select {
+  height: 45px !important;
+  border: 1px solid #909090;
+  padding-left: 15px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea,
+select {
+  outline: none;
+  border: 1px solid #494949;
+}
+
+textarea {
+  min-height: 100px;
+  padding-top: 20px;
+}
+
+.contained-btn {
+  height: 45px !important;
+  background-color: black !important;
+  color: white !important;
+  text-transform: uppercase;
+  padding: 0 20px;
+  border-radius: 4px;
+}
+
+.outlined-btn {
+  height: 45px !important;
+  background-color: white !important;
+  color: black !important;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 0 20px;
+  border-radius: 4px;
+}
+
+.apply-doctor {
+  height: 45px !important;
+  background-color: white !important;
+  color: black !important;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 0 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* 
+text classes */
+
+.text-center {
+  text-align: center;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.underline {
+  text-decoration: underline;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* antd overriding */
+.ant-form-item {
+  margin-bottom: 8px !important;
+}
+
+/* spinner */
+
+.spinner-parent {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000b5;
+  z-index: 999;
+}
+
+.hr-r {
+  border: 1px solid #d3d2d2;
+}
+
+/*register*/
+.form-container {
+  background-color: #ffffff;
+  border-radius: 100px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.h2-r {
+  color: #2c3e50;
+}
+
+/* Input Fields */
+.input-r {
+  border: 1px solid #000000;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-r:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Submit Button */
+.button-r {
+  background-color: #6a7882 !important;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.button-r:hover {
+  background-color: #1d9dff !important;
+}
+
+/* Link */
+.a-r {
+  color: #5dade2;
+  text-decoration: underline;
+}
+
+.a-r:hover {
+  color: #3498db;
+}
+.register-b {
+  /*background-color: #1a4b4e !important;*/
+  background-color: #b8caf2 !important;
+}
+.contact-section {
+  display: flex; /* Aligns the icon and text in a horizontal row */
+  align-items: center; /* Centers them vertically */
+  gap: 15px; /* Adjusts the spacing between the icon and the text */
+}
+
+.contact-icons {
+  background-color: #abb2ba;
+  height: 50px;
+  width: 50px;
+  border-radius: 6px;
+  border: 1px solid #d3d2d2;
+  box-shadow: 0 0 2px 0 #d3d2d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icons i {
+  color: white;
+  font-size: 24px; /* Size of the phone icon */
+}
+
+.contact-text {
+  display: flex; /* Makes the "Call" text and number stack vertically */
+  flex-direction: column; /* Ensures "Call" is above the number */
+}
+
+.text-lg {
+  font-size: 18px; /* Adjust the size for "Call" */
+}
+
+.text-sm {
+  font-size: 14px; /* Adjust the size for the phone number */
+}
+
+.text-gray-600 {
+  color: #6b7280; /* Lighter gray for the phone number */
+}
+
+.font-bold {
+  font-weight: bold;
+}
+.colourwhite {
+  background-color: #d61355;
+  color: white;
+}
+
+.colour-main {
+  background-color: #b8caf2 !important;
+  min-height: 100vh; /* Make sure it covers the entire viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+.specialties-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 columns per row */
+  gap: 15px; /* Reduced gap for closer spacing */
+  padding: 20px;
+  justify-items: center;
+}
+
+.specialty-box {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 320px; /* Slightly larger size for full screen */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, max-width 0.3s ease;
+  cursor: pointer;
+}
+
+.specialty-box:hover {
+  transform: scale(1.1); /* More pronounced hover effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.specialty-image {
+  width: 100%;
+  height: 220px; /* Slightly taller image size */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #e9ecef;
+}
+
+.specialty-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.4)
+  );
+  z-index: 1;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.specialty-box:hover .specialty-image::after {
+  opacity: 1;
+}
+
+.specialty-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 0; /* Ensure it is below the gradient */
+}
+
+.specialty-title {
+  padding: 15px 10px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.specialty-title h4 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.specialty-title h4:hover {
+  color: #1d9dff; /* Highlight effect on title hover */
+}
+
+@media (min-width: 1200px) {
+  /* For full screen and larger devices */
+  .specialties-container {
+    gap: 20px; /* Slightly larger gap for more space on full screens */
+  }
+
+  .specialty-box {
+    max-width: 360px; /* Larger card size on full screen */
+  }
+
+  .specialty-image {
+    height: 250px; /* Larger image height for full screen */
+  }
+}
+
+@media (max-width: 768px) {
+  /* For smaller devices */
+  .specialties-container {
+    gap: 10px; /* Tighten gap for smaller screens */
+  }
+
+  .specialty-image {
+    height: 180px; /* Reduce image height */
+  }
+}
+
+@media (max-width: 480px) {
+  /* For very small devices */
+  .specialties-container {
+    gap: 8px; /* Smaller gap */
+  }
+
+  .specialty-image {
+    height: 150px; /* Smaller image height */
+  }
+}
+
+.help-heading {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.help-heading h3 {
+  font-size: 30px;
+  color: #333;
+  font-weight: bold;
+}
+
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.contact-details,
+.patient-experience,
+.message-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details h4,
+.patient-experience h4,
+.message-form h4 {
+  font-size: 20px;
+  color: #1d9dff;
+  margin-bottom: 15px;
+}
+
+.contact-details p,
+.patient-experience p {
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.contact-details a,
+.patient-experience a {
+  color: #1d9dff;
+  text-decoration: none;
+}
+
+.contact-details a:hover,
+.patient-experience a:hover {
+  text-decoration: underline;
+}
+
+.message-form .form-input,
+.message-form .form-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.message-form .form-textarea {
+  height: 120px;
+  resize: none;
+}
+
+.message-form .form-button {
+  background-color: #1d9dff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message-form .form-button:hover {
+  background-color: #0d7bcc;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .help-heading h3 {
+    font-size: 26px;
+  }
+}
+.color-white {
+  color: white !important;
+}
+.help-card-color {
+  background-color: rgba(242, 241, 226, 0.239);
+}
+
+.contactarf {
+  color: #1d9dff;
+}
+.footer {
+  width: 100%;
+  background-color: #333333;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.footer-text {
+  color: white;
+  font-size: 16px; /* Slightly larger font size */
+  text-align: center; /* Center align the text */
+  font-family: "Arial", sans-serif; /* Modern font */
+  letter-spacing: 0.5px; /* Slight letter spacing for readability */
+  margin: 0; /* Remove default margin */
+}
+
+.footer-text a {
+  color: #f1c40f; /* Gold link color for emphasis */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Make links bold */
+}
+
+.red-button {
+  background-color: #e7000b;
+  border-radius: 7px;
+  border-color: black;
+  border: 1px solid;
+  padding: 5px 10px;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.red-button:hover {
+  background-color: #c10007;
+}
+
+.green-button {
+  background-color: #7cce00;
+  border-radius: 7px;
+  border-color: black;
+  border: 1px solid;
+  padding: 5px 10px;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.green-button:hover {
+  background-color: #5ea500;
+}
